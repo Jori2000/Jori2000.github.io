@@ -17,6 +17,8 @@ Ich denke am sinnvollsten wäre es wenn wir erst einmal die Frontpage gestalten.
   Denke das wird die beste Seite bis jetzt!
 {% endhighlight %}
 
+Könnten auch erst mal Photoshop Mockups machen?!
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
