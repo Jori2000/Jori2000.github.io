@@ -11,6 +11,8 @@
 }
 
 .site-title {
+  border-style: dotted;
+  border-color: red;
     font-size: 26px;
     font-weight: 300;
     line-height: 56px;
@@ -162,6 +164,16 @@
     }
 }
 
+@keyframes myFade {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes myRotate {
+  to {
+    transform: rotate(180deg);
+  }
+}
 
 
 /**
@@ -191,10 +203,75 @@
 
 .post-link {
     display: block;
+    border-style: solid;
     font-size: 24px;
 }
 
 
+.anders {
+  font-family: 'Montserrat', sans-serif;
+  border-style: solid;
+  border-color: black;
+}
+.element {
+  animation: myFade 4s 1s infinite linear alternate,
+             myRotate 4s 1s infinite linear alternate;
+}
+
+.mainElement {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  animation: square-to-circle 8s 1s infinite cubic-bezier(1,.015,.295,1.225) reverse;
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:darkgrey;
+    transform:rotate(0deg);
+  }
+  10%  {
+    border-radius:10% 10% 0 0;
+    background:grey;
+    transform:rotate(45deg);
+  }
+  20%  {
+    border-radius:50% 50% 0 0;
+    background:silver;
+    transform:rotate(90deg);
+  }
+  30%  {
+    border-radius:50% 50% 10% 10%;
+    background:lightgrey;
+    transform:rotate(135deg);
+  }
+  40% {
+    border-radius:50%;
+    background:white;
+    transform:rotate(180deg);
+  }
+  80%  {
+    border-radius:10% 10% 0 0;
+    background:grey;
+    transform:rotate(360deg);
+  }
+  70%  {
+    border-radius:50% 50% 0 0;
+    background:silver;
+    transform:rotate(315deg);
+  }
+  60%  {
+    border-radius:50% 50% 10% 10%;
+    background:lightgrey;
+    transform:rotate(270deg);
+  }
+  50% {
+    border-radius:50%;
+    background:white;
+    transform:rotate(225deg);
+  }
+}
 
 /**
  * Posts
